@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainLobby"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="61dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:text=" 받고 싶지 않은 광고성 전화 ! \n 앱에서 간편하게 차단 하세요 !"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="117dp"
+            android:layout_gravity="center"
+            android:src="@drawable/back" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="42dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <ImageView
+            android:id="@+id/activateBlock"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_weight="3"
+            android:onClick="onClick"
+            android:src="@drawable/button_blockicon"
+            android:text="차단실행" />
+
+        <ImageView
+            android:id="@+id/blockUser"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:src="@drawable/button_user"
+            android:text="차단입력"
+            android:layout_weight="3"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:id="@+id/requestRemoving"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:src="@drawable/button_sign"
+            android:text="차단해제"
+            android:layout_weight="3"
+            android:onClick="onClick"/>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="           차단실행"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="                     번호입력"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="                 해제요청"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="34dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/logOut"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:src="@drawable/button_logout"
+            android:text="로그아웃"
+            android:layout_weight="3"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:id="@+id/addDatabase"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:src="@drawable/button_db"
+            android:text="데이터베이스"
+            android:layout_weight="3"
+            android:onClick="onClick"/>
+
+        <ImageView
+            android:id="@+id/admin"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:src="@drawable/button_manager"
+            android:text="관리자"
+            android:layout_weight="3"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="           로그아웃"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="                      데이터베이스"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="15dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="148dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="13dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="      관리자"
+            android:textColor="@color/fui_bgGitHub"
+            android:textSize="15dp" />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="49dp" />
+
+    <ImageView
+        android:layout_width="115dp"
+        android:layout_height="76dp"
+        android:layout_gravity="center"
+        android:onClick="onClick"
+        android:src="@drawable/button_block"
+        android:text="관리자" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Block Number"
+        android:textColor="@color/fui_bgGitHub"
+        android:textSize="20dp" />
+
+</LinearLayout>
